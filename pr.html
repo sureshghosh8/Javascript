@@ -1,0 +1,30 @@
+<head>
+    <script>
+        function disp()
+        {
+            r.innerHTML="password field contain atleast one uppercase symbol";
+
+        }
+        function show()
+        {
+            var a=p1.value;
+            var b=p2.value;
+            if(a!=b)
+            alert("password and repasswod must same");
+
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        name<input type="text" id="t1"><br>
+        password<input type="password" id="p1" onfocus="disp()">
+        <span id="r"></span>
+        <br>
+        repasswod<input type="password" onblur="show()" id="p2">
+        <br>
+        email<input type="text" id="e1">
+    </form>
+
+</body>

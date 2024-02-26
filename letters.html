@@ -1,0 +1,20 @@
+<head>
+    <script>
+        function tab()
+        {
+            var a=t1.value
+            var L=a.length;
+            var w=a.split("");
+            var b=w.length;
+            m.innerHTML="no of words are "+b+" no of letters are"+L;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        no<textarea rows="12" cols="40" id="t1" onkeyup="tab()">
+        </textarea>
+        <br>
+        <p id="m"></p>
+    </form>
+</body>

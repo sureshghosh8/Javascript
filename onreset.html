@@ -1,0 +1,20 @@
+<head>
+    <script>
+        function disp()
+        {
+            var p=confirm("all data will be lost..... are you want to refresh");
+            return p;
+
+        }
+    </script>
+</head>
+<body>
+    <form onreset="return disp()">
+        name<input type="text" id="t1"><br>
+        email<input type="text" id="t1"><br>
+        password<input type="password" id="t1"><br>
+        <input type="reset" value="refresh">
+
+    </form>
+
+</body>

@@ -1,0 +1,19 @@
+<head>
+    <script>
+        function tab()
+        {
+            var a=parseInt(t1.value);
+            var t="";
+            for(i=1;i<=10;i++)
+            t=t+a*i+"<br>";
+            m.innerHTML=t;
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+        no<input type="text" id="t1" onkeydown="tab()"><br>
+        <p id="m"></p>
+    </form>
+</body>

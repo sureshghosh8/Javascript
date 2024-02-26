@@ -1,0 +1,20 @@
+<head>
+    <script>
+    function disp()
+    {
+    var a =new Date();
+    var i=a.toLocaleTimeString();
+    d.innerHTML=i;
+    }
+    </script>
+    </head>
+    
+    <body onload="disp()">
+    <p id="d"></p>
+    <input type="button" value="OK" onmouseup="disp()">
+    <script>
+    setInterval("disp()",1000);
+    </script>
+    
+    </body>
+    
