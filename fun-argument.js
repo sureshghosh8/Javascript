@@ -103,3 +103,20 @@ return odd;
         console.log("wrong request");
     }
  }
+ //this keyword
+ const student=
+ {name:"suresh",
+ age:24
+ ,eng:95
+ ,math:89,
+ phy:75,
+ getAvg(){
+    let avg=(this.eng+this.math+this.phy)/3;
+    console.log(avg);
+ }}
+//arrow function
+const sum=(a,b)=>{
+    console.log(a+b);
+};
+
+ 
