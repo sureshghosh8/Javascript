@@ -74,3 +74,32 @@ function outerFun(){
 var sum=function(a,b){
     return a+b;
 }
+//Higher order function
+function multipleGreet(funC,count){
+    for (let i=1;i<=count;i++){
+        funC();
+    }
+}
+let greet=function(){
+    console.log("hello");
+}
+multipleGreet(greet,10);
+//returns a functions
+ 
+ 
+ function oddOrEvenFactory(request){
+    if(request=="odd"){
+        let odd =function(n)
+        {
+        console.log(!(n%2==0));
+     }
+return odd;
+    }else if(request=="even"){let even=function(n){
+        console.log(n%2==0);
+     }
+     return even;
+
+    }else{
+        console.log("wrong request");
+    }
+ }
