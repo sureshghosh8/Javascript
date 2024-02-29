@@ -115,8 +115,63 @@ return odd;
     console.log(avg);
  }}
 //arrow function
-const sum=(a,b)=>{
+const sums=(a,b)=>{
     console.log(a+b);
 };
+//this with Arrow Functions
+const students={
+    name:"suresh",
+    marks:95,
+    prop:this,//global scope
+    getName:function(){
+        return this.name;
+    },
+    getMarks:()=>{
+        console.log(this);//parent name
+        return this.marks;
+    },
+    getInfo1:function(){
+        setTimeout(()=>{
+            console.log(this);},2000);
+        },
+        getInfo2:function(){
+            setTimeout(function(){
+                console.log(this);},2000);
+
+            },
+        };
+    //write an arrow function that returns the square of a number 'n'
+    const square=(n)=>n*n;
+console.log(square(4));
+//write a function that prints "hello world" 5 times at intercals of 2s each.
+let id=setInterval(()=>{
+    console.log("hello world");
+},2000);
+setTimeout(()=>{
+    clearInterval(id);
+},10000);
+//forEach method
+let arr=[1,2,3,4,5];
+let print=function(el){
+    console.log(el);
+};
+arr.forEach(print);
+//map method
+let number=[1,2,3,4];
+let double=number.map((el)=>{
+    return el*el;
+});
+//filter method
+let nums=[2,4,1,5,6,2,7,8,9];
+let ans=nums.filter((el)=>{
+    return el<5;
+});
+//Every method
+[2,4,60].every((el)=>el%2==0);
+//some meyhod
+[1,2,3,4].some((el)=>(el%2==0));
+//reduce
+let numss=[1,2,3,4];
+let finalVal=numss.reduce((res,el)=>res+el);
 
  
