@@ -4,7 +4,7 @@ function printInfo(name,age){
 printInfo("suresh",23);
 printInfo("sujoy",24);
 //second example
-function sum(a,b){
+function sum(a=1,b=3){
     console.log(a+b);
 }
 sum(1,2);
@@ -173,5 +173,17 @@ let ans=nums.filter((el)=>{
 //reduce
 let numss=[1,2,3,4];
 let finalVal=numss.reduce((res,el)=>res+el);
-
+//check if all numbers in our array are multiples of 10 or not.
+let ad=[10,20,30,40];
+let and=ad.every((el)=>el%10==0);
+console.log(and);
+//create a function to find the min number in an array
+let min=ad.reduce((min,el)=>{
+    if(min<el){
+        return min;
+    }else{
+        return el;
+    }
+});
+console.log(min);
  
