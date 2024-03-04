@@ -186,4 +186,7 @@ let min=ad.reduce((min,el)=>{
     }
 });
 console.log(min);
- 
+ //rest with array
+ function sum(...args){
+    return args.reduce((sum,el)=>sum+el);
+ }
