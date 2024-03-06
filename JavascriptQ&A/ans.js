@@ -7,7 +7,7 @@ let eng=90;
 let math=100;
 let avg=(hindi+eng+math)/3;
 //what is the value of each variable in each line of code
-let num=5;
+let nums=5;
 let newNum=num++;
 newNum=++num;
 //Declare your name as a string and print its length in JS
@@ -40,4 +40,19 @@ console.log("price is rs.100");
 }else{
     console.log("price is rs.50");
 }
-//use swtich statement to print the day of the week using a number variable'day' with values 1 to 7
+//A "good string" is a string that starts with the letter 'a'& has a length>3.write a program to find if a string is good or not.
+let str="apple";
+if(str[0]==='a' && str.length>3 ){
+    console.log("good string");
+
+}else{
+    console.log("not a good string");
+}
+//logical question
+let num=12;
+if((num%3===0)&&((num+1===15)||(num-1===11))){
+    console.log("safe");
+}else{
+    console.log("unsafe");
+}
+//use switch statement to print the day of the week using a number variable 'day' with values 1 to 7
