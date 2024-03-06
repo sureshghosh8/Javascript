@@ -70,10 +70,25 @@ switch(day){
     case 4:
     console.log("Thurasday");
     break;
-    case 1:
-    console.log("Monday");
+    case 5:
+    console.log("Friday");
     break;
-    case 1:
-    console.log("Monday");
+    case 6:
+    console.log("Saturday");
     break;
+    case 7:
+        console.log("Sunday");
+        break;
 }
+//Create a number variable num with some value.Now,print"good" if the number is divisible  by 10 and print "bad" if it not.
+let numss=20;
+if(num%10==0){
+    console.log("good");
+}else{
+    console.log("bad");
+}
+//Take the user's name & age as input using prompts.Then return back the following statement to the user as an alert(by subsituting their name & age):name is age years old
+let naam=prompt("please enter your name");
+let age=prompt("please enter your age");
+alert(`$(naam) is $(age) years old.`);
+//
