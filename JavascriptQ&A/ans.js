@@ -91,4 +91,24 @@ if(num%10==0){
 let naam=prompt("please enter your name");
 let age=prompt("please enter your age");
 alert(`$(naam) is $(age) years old.`);
-//
+//Write a switch statement to print the months in a quater.
+let quater=1;
+switch(quater){
+    case 1:console.log("january,febuary,march");
+    break;
+    case 2:console.log("April,May,June");
+    break;
+    case 3:console.log("july,august,september");
+    break;
+    case 4: console.log("october,november,december");
+    break;
+    default:console.log("not a quater");
+}
+//A string is a golden string if it starts with the character 'A' or 'a' and has a total length greater than 5. for a given string print if it is golden or not.
+let string="apples";
+if((string[0]=='a'||start[0]=='A')&&(string.length>5))
+{
+    console.log("golden string");
+}else{
+    console.log("not a golden string");
+}
