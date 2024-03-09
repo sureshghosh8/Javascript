@@ -143,3 +143,16 @@ else{
 let clg="college";
 clg.slice(4);
 clg.slice(4).replace('l','t');
+//for the given start of an array,change it to final form using methods
+//start:['january','july','march','august']
+let months=['january','july','march','august'];
+months.shift();
+//add june in array
+months.unshift("june");
+months.unshift("july");
+//for the given start of an array,change it to final form using splice.
+//start:['january','july','march','august']
+months.splice(0,2,"july","june");
+//Return the index of the "javascript" from the given array.if it was reversed.
+let lang=["c","c++","html","javascript","python","java"];
+lang.reverse();
