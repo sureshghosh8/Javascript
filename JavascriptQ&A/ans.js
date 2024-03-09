@@ -112,3 +112,34 @@ if((string[0]=='a'||start[0]=='A')&&(string.length>5))
 }else{
     console.log("not a golden string");
 }
+// write a program to find the largest of 3 numbers.
+let a=5;
+let b=18;
+let c=13;
+if(a>b){
+
+if(a>c){
+    console.log(a,"is largest");
+}else{
+    console.log(c,"is largest");
+}}
+else{if(b>c){
+    console.log(b,"is largest");
+}else{
+    console.log(c,"is largest");
+}
+
+}
+//Write a program to check if 2 numbers have the same last digit.
+let num1=32;
+let num2=47852;
+if((num1%10)==(num2%10)){
+    console.log("numbers have the same last digit which is", num1%10);
+}
+else{
+    console.log("numbers don't have the same last digit");
+}
+//Separate the "college" part in above string & replace 'I' with 'T' in it.
+let clg="college";
+clg.slice(4);
+clg.slice(4).replace('l','t');
