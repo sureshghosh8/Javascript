@@ -190,3 +190,14 @@ console.log(min);
  function sum(...args){
     return args.reduce((sum,el)=>sum+el);
  }
+ //Destructuring in 
+ const student={
+    name:"karan",
+    age:15,
+    class:6,
+    subject:["hindi","english","math"],
+    username:"karan@123",
+    password:"abcd",
+    
+ };
+ let{username:user,password:secret,city:place="mumbai"}=student;
