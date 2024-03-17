@@ -25,3 +25,8 @@ function getRandomColor(){
   return color;
 
 }
+//this in Event Listeners
+let bton=document.querySelector("button");
+btn.addEventListener("click",function(){
+  this.style.backgroundColor="blue";
+})
