@@ -30,3 +30,14 @@ let bton=document.querySelector("button");
 btn.addEventListener("click",function(){
   this.style.backgroundColor="blue";
 })
+//keyboard Events
+let inp=document.querySelector("input");
+inp.addEventListener("keydown",function(e){
+  console.log(e.key);
+  if(e.code=="Arrowup"){  //ArrowUp,ArrowDown,Arrowleft,ArrowRight
+    console.log("arrowup");
+
+  }
+
+  console.log("key was pressed");
+})
