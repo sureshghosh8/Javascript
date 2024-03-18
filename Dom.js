@@ -53,4 +53,20 @@ form.addEventListener("submit",function(){
 setTimeout(()=>{
   console.log("apna college");
 },2000);
+setTimeout(()=>{
+  console.log("welcome to the clg");
+},2000);
 console.log("hello.......");
+//Promises
+
+function SaveDb(data){
+  return new Promise((sucess, failure) => {
+    let internetSpeed=Math.floor(Math.random()*10)+1;
+    if(internetSpeed>4){
+      sucess("sucess:data was saved")
+    }else{
+      failure("failure:weak connection")
+    }
+    
+  });
+}
