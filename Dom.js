@@ -49,3 +49,8 @@ form.addEventListener("submit",function(){
   console.log(user.value);
   console.log(pass.value);
 })
+//single Threaded
+setTimeout(()=>{
+  console.log("apna college");
+},2000);
+console.log("hello.......");
