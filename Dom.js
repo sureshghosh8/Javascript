@@ -70,3 +70,13 @@ function SaveDb(data){
     
   });
 }
+//then()&catch()
+saveDb("apna college")
+.then(()=>{
+  console.log("promise was resolved");
+
+})
+.catch(()=>{
+  console.log("promise was rejected");
+  console.log(request);
+})
