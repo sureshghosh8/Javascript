@@ -80,3 +80,15 @@ saveDb("apna college")
   console.log("promise was rejected");
   console.log(request);
 })
+//
+h1 =document.querySelector("h1");
+function changeColor(color,delay){
+  new Promise((resolve,reject)=>{setTimeout(()=>{
+    h1.style.color=color;
+    resolve("color changed!");
+  },delay);
+
+  })
+  
+}
+changeColor
