@@ -242,4 +242,15 @@ for(let i=1; i<=n; i++){
     factorial *=i;
 }
 console.log(`factorial of ${n} is ${factorial}`);
+//To create slide in javascript
+var i=0;
+function disp()
+{
+var a=["a.jpg","b.jpg","c.jpg","d.jpg"];
+i++;
+m.src=a[i];
+if(i>3)
+i=-1
+}
+
   
