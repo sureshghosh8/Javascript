@@ -115,3 +115,7 @@ let requestPromise=changeColor("red",2000)
   
 
 })
+//async function
+let demo=async()=>{
+  return 5;
+};
