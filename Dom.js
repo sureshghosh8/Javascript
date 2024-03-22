@@ -80,15 +80,38 @@ saveDb("apna college")
   console.log("promise was rejected");
   console.log(request);
 })
-//
+//refactoring code
 h1 =document.querySelector("h1");
 function changeColor(color,delay){
-  new Promise((resolve,reject)=>{setTimeout(()=>{
+   return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
     h1.style.color=color;
     resolve("color changed!");
   },delay);
+});
+  }
+let requestPromise=changeColor("red",2000)
+.then(()=>{
+  console.log("red color was completed");
+  return changeColor("orange",1000);
 
-  })
+
+})
+.then(()=>{
+  console.log("orange color was completed");
+  return changeColor("green",1000);
   
-}
-changeColor
+
+})
+.then(()=>{
+  console.log("green color was completed");
+  return changeColor("blue",1000);
+  
+
+})
+.then(()=>{
+  console.log("green color was completed");
+  return changeColor("blue",1000);
+  
+
+})
