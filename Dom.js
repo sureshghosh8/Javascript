@@ -90,6 +90,15 @@ function changeColor(color,delay){
   },delay);
 });
   }
+  // Await function
+  async function demo(){
+     await changeColor("red",1000);
+     await changeColor("orange",1000);
+     await changeColor("green",1000);
+     changeColor("blue",1000);
+
+
+  }
 let requestPromise=changeColor("red",2000)
 .then(()=>{
   console.log("red color was completed");
