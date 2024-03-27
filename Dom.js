@@ -128,3 +128,14 @@ let requestPromise=changeColor("red",2000)
 let demo=async()=>{
   return 5;
 };
+//Axios
+async function getFacts(){
+  try{
+    let res=await axisos.get(url);
+    console.log(res);
+
+  }
+  catch(e){
+    console.log("Error---",e);
+  }
+}
